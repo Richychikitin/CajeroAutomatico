@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/inicio.css">
+    <title>Cajero</title>
+</head>
+<body>
+    <div class="caja">
+        <img src="./img/pink_cat_ungry.png" id="GatoEnojado" class="escondido" alt="gato rosa enojado">
+        <img src="./img/pink_cat.png" id="GatoFeliz" class="" alt="gato rosa">
+        <h1 id="bienvenida">Hola!!! Bienvenid@</h1>
+        <div class="monitor">
+            <h2 id="saldo">Tu saldo:</h2> 
+            <span id="suma"></span>
+            <span id="resta"></span>
+        </div>
+        <div id="errorRetiro" class="escondido">Mensaje de error para el retiro</div>
+        <div id="errorAbono" class="escondido">Mensaje de error para el abono</div>
+        <div>
+            <button class="retirar" onclick="retirar()">Retirar</button>
+            <input type="number" class="input" id="retirar" placeholder="$">
+        </div>
+        <div>
+            <button class="abonar" onclick="abonar()">Abonar</button>
+            <input type="number" class="input" id="depositar" placeholder="$">
+        </div>
+            <button class="button" onclick="saldo()">Saldo</button>
+    </div>
+</body>
+<script src="./js/caja.js"></script>
+</html>
